@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <div class="wunchaki"></div>
+            <ul>
+                <a href="#login__page"><li>Kirish</li></a>
+                <a href="#signup"><li>Ro'yhatdan o'tish</li></a>
+            </ul>
+        </nav>
+        <main>
+            <h1 class="title">Xoxlagan vaqtingiz <span>UC</span> tushirib olish imkonini beruvchi sayt</h1>
+            <a href="#login__page" class="btn">UC TUSHIRISH</a>
+        </main>
+    </section>
+    <section id="signup">
+        <div class="signup__box">
+            <header>
+                <h2>Ro'yhatdan O'tish</h2>
+            </header>
+            <form>
+                <div class="form__item">
+                    <label for="id">Sizning IDingiz</label>
+                    <input type="text" id="id">
+                </div>
+                <div class="form__item">
+                    <label for="card">Plastik karta raqami</label>
+                    <input type="text" maxlength="16" minlength="16" id="card">
+                </div>
+                <div class="form__item">
+                    <label for="login">Yangi login</label>
+                    <input type="text" id="login">
+                </div>
+                <div class="form__item">
+                    <label for="password">Yangi parol</label>
+                    <input type="text" id="password">
+                </div>
+                <a href="#verify" type="submit" class="btn signup__btn">Keyingisi</a>
+            </form>
+        </div>
+    </section>
+    <section id="verify">
+        <div class="verify__box">
+            <header>
+                <h2>Tasdiqlash</h2>
+            </header>
+            <form>
+                <div class="form__item">
+                    <p>Biz plastik kartaga ulangan telefon nomerga maxsus kod jo'natdik!</p>
+                </div>
+                <div class="form__item">
+                    <label for="code">Tasdiqlash kodi</label>
+                    <input type="text" id="code">
+                </div>
+                <a href="#login__page" type="submit" class="btn signup__btn">Tasdiqlash</a>
+            </form>
+        </div>
+    </section>
+    <section id="verify__page">
+        <div class="verify__box">
+            <header>
+                <h2>Tasdiqlash</h2>
+            </header>
+            <form>
+                <div class="form__item">
+                    <p>Biz plastik kartaga ulangan telefon nomerga maxsus kod jo'natdik!</p>
+                </div>
+                <div class="form__item">
+                    <label for="code">Tasdiqlash kodi</label>
+                    <input type="text" id="code">
+                </div>
+                <a href="#login__page" type="submit" class="btn signup__btn">Tasdiqlash</a>
+            </form>
+        </div>
+    </section>
+    <section id="login__page">
+        <div class="login__box">
+            <header>
+                <h2>Kirish</h2>
+            </header>
+            <form>
+                <div class="form__item">
+                    <label for="login">Login</label>
+                    <input type="text" id="login">
+                </div>
+                <div class="form__item">
+                    <label for="password">Parol</label>
+                    <input type="text" id="password">
+                </div>
+                <a href="#uc__page" type="submit" class="btn signup__btn">UC TUSHIRISH</a>
+            </form>
+        </div>
+    </section>
+    <section id="uc__page">
+        <div class="uc__box">
+            <header>
+                <h2>UC TUSHIRISH</h2>
+            </header>
+            <form>
+                <div class="form__item">
+                    <label for="id">Foydalanuvchi IDsi</label>
+                    <input type="text" id="id" placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="form__item">
+                    <label for="uc">Qancha tushirmoqchisiz</label>
+                    <input type="text" id="uc" placeholder="0 0 UC">
+                </div>
+                <a href="#verify__page" type="submit" class="btn signup__btn">Keyingisi</a>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
